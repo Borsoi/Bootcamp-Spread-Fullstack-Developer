@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <style>
+        .flex {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+        }
+        
+
+        .item {
+            background-color: blue;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .row-reverse {
+            flex-direction: row-reverse;
+        }
+
+        .row-reverse li {
+            background-color: red;
+        }
+
+        .column {
+            float: left;
+            flex-direction: column;
+        }
+
+        .column li {
+            background-color: orange;
+        }
+
+        .column-reverse {
+            float: right;
+            flex-direction: column-reverse;
+        }
+
+        .column-reverse li {
+            background-color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="flex">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+    </ul>
+
+    <ul class="flex row-reverse">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+    </ul>
+
+    <ul class="flex column">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+    </ul>
+
+    <ul class="flex column-reverse">
+        <li class="item">1</li>
+        <li class="item">2</li>
+        <li class="item">3</li>
+        <li class="item">4</li>
+        <li class="item">5</li>
+    </ul>
+</body>
+</html>
