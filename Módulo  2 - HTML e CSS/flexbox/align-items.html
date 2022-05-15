@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align Items</title>
+    <style>
+      .container {
+        max-width: 350px;
+        border: 1px solid black;
+        margin: 10px;
+        display: flex;
+      }
+
+      .align-container {
+        align-items: center;
+      }
+
+      .item {
+        background-color: brown;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .center {
+        align-self: center;
+      }
+
+      .start {
+        align-self: flex-start;
+      }
+
+      .end {
+        align-self: flex-end;
+      }
+
+      .baseline {
+        align-self: baseline;
+      }
+
+      .stretch {
+        align-items: stretch;
+      }
+
+      .direction{
+          flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container align-items">
+      <div class="item">AAA</div>
+      <div class="item">123</div>
+      <div class="item">Lorem ipsum dolor</div>
+      <div class="item">Item 4</div>
+    </section>
+
+    <section class="container">
+      <div class="item center">AAA</div>
+      <div class="item start">123</div>
+      <div class="item stretch">Lorem ipsum dolor</div>
+      <div class="item end">Item 4</div>
+    </section>
+
+    <section class="container">
+      <div class="item center">AAAAAA</div>
+      <div class="item start">AAAAAAAAAAAAAAAAAAAAAAA</div>
+      <div class="item stretch">AAAAAAAAAAA</div>
+    </section>
+
+    <h2>COLUMN</h2>
+
+    <section class="container align-items direction">
+        <div class="item">AAA</div>
+        <div class="item">123</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">Item 4</div>
+      </section>
+  
+      <section class="container direction">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Lorem ipsum dolor</div>
+        <div class="item end">Item 4</div>
+      </section>
+  
+      <section class="container direction">
+        <div class="item center">AAAAAA</div>
+        <div class="item start">AAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="item stretch">AAAAAAAAAAA</div>
+      </section>
+  </body>
+</html>
