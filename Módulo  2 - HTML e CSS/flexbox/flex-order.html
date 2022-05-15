@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Order</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 300px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        .item{
+            flex: 1;
+            background: brown;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .ordem-1{
+            order: 1;
+        }
+
+        .ordem-2{
+            order: 2;
+        }
+
+        .ordem-3{
+            order: 3;
+        }
+
+        .ordem-4{
+            order: 4;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+    
+    </style>
+</head>
+<body>
+    <h2>ORDER 0 </h2>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <h2>ORDER MIX </h2>
+    <div class="container">
+        <div class="item ordem-4">1</div>
+        <div class="item ordem-2">4</div>
+        <div class="item ordem-3">4n</div>
+        <div class="item ordem-1">4m</div>
+    </div>
+
+    <h1>COLUMN</h1>
+
+    <h2>ORDER 0 </h2>
+    <div class="container direction">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <h2>ORDER MIX </h2>
+    <div class="container direction">
+        <div class="item ordem-4">1</div>
+        <div class="item ordem-2">4</div>
+        <div class="item ordem-3">4n</div>
+        <div class="item ordem-1">4m</div>
+    </div>
+    
+</body>
+</html>
