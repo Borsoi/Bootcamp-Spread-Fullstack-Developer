@@ -1,3 +1,8 @@
 [submodule "Módulo  2 - HTML e CSS/project-flexbox-dio"]
 	path = Módulo  2 - HTML e CSS/project-flexbox-dio
 	url = https://gitlab.com/Borsoi1/project-flexbox-dio.git
+[submodule "https://gitlab.com/karensantos/project-flexbox-dio/-/tree/master/flex-projeto"]
+	url = https://gitlab.com/Borsoi1/project-flexbox-dio
+[submodule "flexbox"]
+	path = Módulo  2 - HTML e CSS/project-flexbox-dio
+	url = https://gitlab.com/Borsoi1/project-flexbox-dio
