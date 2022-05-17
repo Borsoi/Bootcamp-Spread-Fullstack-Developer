@@ -1,3 +1,6 @@
 [submodule "Módulo  2 - HTML e CSS/flexbox-project-DIO"]
 	path = Módulo  2 - HTML e CSS/flexbox-project-DIO
 	url = git@github.com:Borsoi/flexbox-project-DIO.git
+[submodule "Módulo  2 - HTML e CSS/final-project-flexbox-instagram-DIO"]
+	path = Módulo  2 - HTML e CSS/final-project-flexbox-instagram-DIO
+	url = https://github.com/Borsoi/final-project-flexbox-instagram-DIO.git
