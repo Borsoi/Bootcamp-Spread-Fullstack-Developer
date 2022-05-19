@@ -1,0 +1,41 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container-lista {
+  width: 300px;
+}
+
+input {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: grey;
+}
+
+#botao-entrada {
+  background-color: lightcyan;
+  border: 2px solid lightblue;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+#lista-to-do li {
+  padding-bottom: 5%;
+}
