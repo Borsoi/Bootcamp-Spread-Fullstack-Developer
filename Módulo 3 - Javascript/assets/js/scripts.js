@@ -14,9 +14,29 @@ function increment() {
     currentNumber = currentNumber + 1;
     currentNumberWrapper.innerHTML = currentNumber;
   }
+
+  if (currentNumber > 0) {
+    currentNumberWrapper.style.color = "green";
+  }
+
+  if (currentNumber == 0) {
+    currentNumberWrapper.style.color = "black";
+  }
 }
 
 function decrement() {
-  currentNumber = currentNumber - 1;
-  currentNumberWrapper.innerHTML = currentNumber;
+  if (currentNumber <= -10) {
+    return;
+  } else {
+    currentNumber = currentNumber - 1;
+    currentNumberWrapper.innerHTML = currentNumber;
+  }
+
+  if (currentNumber < 0) {
+    currentNumberWrapper.style.color = "red";
+  }
+
+  if (currentNumber == 0) {
+    currentNumberWrapper.style.color = "black";
+  }
 }
