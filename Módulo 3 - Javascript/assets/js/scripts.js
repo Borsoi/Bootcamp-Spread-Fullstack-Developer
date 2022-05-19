@@ -8,8 +8,12 @@ const diminuir = document.getElementById("subtrair");
 diminuir.addEventListener("click", decrement);
 
 function increment() {
-  currentNumber = currentNumber + 1;
-  currentNumberWrapper.innerHTML = currentNumber;
+  if (currentNumber >= 10) {
+    return;
+  } else {
+    currentNumber = currentNumber + 1;
+    currentNumberWrapper.innerHTML = currentNumber;
+  }
 }
 
 function decrement() {
