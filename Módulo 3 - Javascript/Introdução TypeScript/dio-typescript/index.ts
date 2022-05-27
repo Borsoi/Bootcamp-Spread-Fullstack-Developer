@@ -1,4 +1,4 @@
-function soma(a: number, b: number) {
+/* function soma(a: number, b: number) {
   return a + b;
 }
 
@@ -33,3 +33,11 @@ const animal: IDomestico = {
   porte: "Médio",
   domestico: true,
 };
+ */
+
+const input = document.getElementById("input") as HTMLInputElement;
+
+input.addEventListener("input", (event) => {
+  const i = event.currentTarget as HTMLInputElement;
+  console.log(i.value);
+});
