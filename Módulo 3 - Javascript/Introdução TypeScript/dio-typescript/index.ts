@@ -41,3 +41,28 @@ input.addEventListener("input", (event) => {
   const i = event.currentTarget as HTMLInputElement;
   console.log(i.value);
 });
+
+//GENERIC TYPES
+
+function adicionaApendiceALista<T>(array: any[], valor: T ) {
+  return array.map(item => item + valor);
+}
+
+adicionaApendiceALista([1,2,3], 1);
+
+
+interface IUsuario {
+  id: string;
+  email: string,
+}
+
+interface IAdmin extends IUsuario {
+  cargo: "gerente" | "coordernador" | "supervisor";
+}
+
+function redirecionar(usuario: IUsuario | IAdmin) {
+  if("cargo" in usuario) {
+    //Redicionar para área de adminstração
+  }
+  //Redicionar para área do usuário
+}
