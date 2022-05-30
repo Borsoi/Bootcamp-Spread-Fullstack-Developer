@@ -7,9 +7,10 @@
     "start": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Guilherme Borsoi",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.6.0",
     "parcel-bundler": "^1.12.5"
   },
   "devDependencies": {

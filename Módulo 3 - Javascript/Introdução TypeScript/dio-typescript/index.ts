@@ -44,25 +44,52 @@ input.addEventListener("input", (event) => {
 
 //GENERIC TYPES
 
-function adicionaApendiceALista<T>(array: any[], valor: T ) {
-  return array.map(item => item + valor);
+function adicionaApendiceALista<T>(array: any[], valor: T) {
+  return array.map((item) => item + valor);
 }
 
-adicionaApendiceALista([1,2,3], 1);
-
+adicionaApendiceALista([1, 2, 3], 1);
 
 interface IUsuario {
   id: string;
-  email: string,
+  email: string;
+  cargo?: "funcionário" | "coordernador" | "supervisor" | "gerente";
 }
 
-interface IAdmin extends IUsuario {
-  cargo: "gerente" | "coordernador" | "supervisor";
-}
-
-function redirecionar(usuario: IUsuario | IAdmin) {
-  if("cargo" in usuario) {
+function redirecionar(usuario: IUsuario) {
+  if (usuario.cargo) {
     //Redicionar para área de adminstração
   }
   //Redicionar para área do usuário
 }
+
+interface ICachorro {
+  nome: string;
+  idade: number;
+  parqueFavorito?: string;
+}
+
+type CachorroSomenteLeitura = {
+  +readonly [K in keyof ICachorro]-?: ICachorro[K];
+};
+
+class MeuCachorro implements CachorroSomenteLeitura {
+  nome;
+  idade;
+  parqueFavorito;
+
+  constructor(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+  }
+}
+
+import $ from "jquery";
+
+$.fn.extend({
+  novaFuncao() {
+    console.log("Chamou nova função");
+  },
+});
+
+$("body").novaFuncao();
