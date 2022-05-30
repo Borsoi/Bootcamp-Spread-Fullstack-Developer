@@ -1,1 +1,9 @@
-export const numero = 2;
+interface Pessoa {
+  nome: string,
+  idade: number,
+  nacionalidade: string,
+};
+
+interface Brasileiro extends Omit<Pessoa, "nacionalidade"> {
+
+}
