@@ -4,3 +4,6 @@
 [submodule "Módulo 2 - HTML e CSS/final-project-flexbox-instagram-DIO"]
 	path = Módulo 2 - HTML e CSS/final-project-flexbox-instagram-DIO
 	url = https://github.com/Borsoi/final-project-flexbox-instagram-DIO
+[submodule "Módulo 3 - Javascript/Projeto/estacionamento-typescript"]
+	path = Módulo 3 - Javascript/Projeto/estacionamento-typescript
+	url = https://github.com/Borsoi/estacionamento-typescript
