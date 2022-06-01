@@ -8,7 +8,7 @@ function sum(a, b) {
 
 function primeiroJSX() {
   return (
-    <div>
+    <div className="teste">
       Guilherme Borsoi
       <h1>Soma: {sum(10, 20)}</h1>
     </div>
