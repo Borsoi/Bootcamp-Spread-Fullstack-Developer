@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from "react";
 import ReactDOM from "react-dom";
 import Button from "./Button";
 import ComponenteA from "./ComponenteA";
@@ -13,6 +13,45 @@ function primeiroJSX() {
   return <div className="teste">Guilherme Borsoi</div>;
 }
 
+class AppClasse extends Component {
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      clock: 1000,
+      copo: "água"
+    }
+  }
+
+  alterarCopo = () => {
+    this.setState({
+      copo: "refrigerante"
+    })
+  }
+
+  componentDidMount() {
+      window.setTimeout(() => {
+        this.setState({
+          copo:"suco"
+        })
+      }, 3000);
+  }
+
+
+  render() {
+    const {clock, copo} = this.state
+    return (
+    <div>
+      <h1>{clock}</h1>
+        <button onClick={() => this.alterarCopo()}>
+          <h1>{copo}</h1></button>
+    </div>
+    )
+  }
+
+}
+
 const App = () => {
   return (
     <div className="App">
@@ -25,4 +64,4 @@ const App = () => {
 };
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<AppClasse />, rootElement);
